@@ -86,7 +86,8 @@ main::before {
     padding-bottom: 5px;
 }
 
-.embrulho p:last-child {
+/*.embrulho p:last-child {*/
+p.fim {
     text-align: center;
     color: rgb(212, 190, 149);
 
