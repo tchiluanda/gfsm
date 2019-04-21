@@ -10,28 +10,23 @@ font-family: 'Abril Fatface', cursive;
 */
 
 html {
-    height: 100%;
-    overflow: hidden;
+    background: url(padrao1.jpg) top no-repeat, url(padrao2.jpg) bottom no-repeat;
+    background-size: 100% 50%, 100% 50%;
 }
+
+
 
 body {
     color: #fff;
     margin: 0;
     padding: 0;
     perspective: 1px;
-    transform-style: preserve-3d;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 header {
-    box-sizing: border-box;
-    min-height: 100vh;
-    padding: 5vw 0 5vw;
+    box-sizing: border-box;  
+    padding: 48px 0 48px;
     position: relative;
-    transform-style: inherit;
-    width: 100vw;
 }
 
 header img {
@@ -39,44 +34,8 @@ header img {
         margin-left: auto;
         margin-right: auto;
         max-width: 100%;
-
 }
 
-header h1 {
-    margin-top: -100px;
-    font-family: 'Crimson Text', serif;
-    font-weight: bold;
-    font-size: 5em;
-}
-
-header, header:before {
-    background: 50% 50% / cover;
-}
-
-header::before {
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: block;
-    background-image: url("padrao1.png");
-    background-size: cover;
-    transform-origin: center center 0;
-    transform: translateZ(-2px) scale(3);
-    z-index: -1;
-    min-height: 100vh;
-}
-
-header * {
-    font-weight: normal;
-    letter-spacing: 0.2em;
-    text-align: center;
-    margin: 0;
-    padding: 1em 0;
-    font-family: 'Crimson Text';
-}
 
 /*main {
     box-sizing: border-box;
@@ -107,13 +66,10 @@ main::before {
 .embrulho{
     
     font-family: 'Lora';
-    padding: 0 15px;
+    padding: 0 15px 15px 15px;
     color: rgb(59,55,52);
     background-color: whitesmoke;
-    position: relative;
-    z-index: 1;
     max-width: 600px;
-    display: block;
     margin: 0 auto;   
     border-radius: 1%;
 }
@@ -130,6 +86,11 @@ main::before {
     padding-bottom: 5px;
 }
 
+.embrulho p:last-child {
+    text-align: center;
+    color: rgb(212, 190, 149);
+
+}
 
 span.especial {
     color: rgb(212, 190, 149);
